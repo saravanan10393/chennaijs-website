@@ -1,0 +1,216 @@
+:root {
+  --base-color: #E7C95B;
+  --font-color: #fff;
+}
+
+.App{
+  text-align: center;
+  padding: 20px 0px;
+  box-sizing: border-box;
+  background: rgba(0,0,0, 0.4);
+}
+
+.notificationBar{
+  height: 40px;
+  background: lightcoral;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  align-items: center;
+}
+
+.notificationBar button{
+  border: none;
+  border-radius: 3px;
+  background: #fff;
+}
+
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  color: var(--font-color);
+}
+
+header div{
+  padding: 0px 20px;
+  font-size: 20px;
+  line-height: 50px;
+  border: 2px solid var(--base-color);
+}
+
+header div span{
+  color: var(--base-color);
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 10px 0px;
+}
+
+nav a{
+  flex-basis: 70px;
+  padding: 0px 15px;
+  text-decoration: none;
+  color: var(--font-color);
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.meetup-details{
+  padding: 30px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.meetup-details .date{
+  line-height: 22px;
+  font-size: 22px;
+  font-weight: bolder;
+  padding: 10px 0px;
+  color: var(--font-color);
+}
+
+.meetup-details .title{
+  padding: 10px 0px;
+}
+
+.meetup-details .title h1{
+  font-size: 64px;
+  line-break: 64px;
+  font-weight: bolder;
+  color: var(--base-color);
+  letter-spacing: 1.2;
+}
+
+.meetup-details .title p{
+  font-size: 18px;
+  margin: 20px 0px;
+  color: var(--font-color)
+}
+
+.meetup-details .title p span{
+  color: var(--base-color);
+}
+
+.meetup-details .joinus{
+  padding: 15px 25px;
+  background: var(--base-color);
+  color: var(--font-color);
+  line-height: 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.clock{
+  padding: 30px 0px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.clock .ticks{
+  border: 2px solid var(--font-color);
+  padding: 20px;
+  min-width: 100px;
+  box-sizing: border-box;
+}
+
+.clock .ticks:not(:first-child){
+  margin-left: 20px;
+}
+
+.clock .ticks h3{
+  font-size: 30px;
+  font-weight: bolder;
+  color:var(--font-color)
+}
+
+.clock .ticks small {
+  text-transform: uppercase;
+  margin: 10px 0px;
+  font-size: 12px;
+  color: var(--font-color);
+}
+
+.scrolldown{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 45px 0px;
+  flex-direction: column;
+}
+
+.scrolldown .mousebox{
+  height: 40px;
+  width: 20px;
+  padding: 5px;
+  border: 2px solid var(--base-color);
+  margin-bottom: 10px;
+}
+
+.scrolldown p{
+  color: var(--font-color);
+  font-size: 14px;
+}
+
+
+/* admin css */
+.adminpage{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eventform{
+  display: grid;
+  grid-gap: 10px;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  min-height: 200px;
+  box-shadow: 0px 2px 25px 0 rgba(17, 17, 24, 0.12);
+  padding: 20px;
+}
+
+.input{
+  max-width: 200px;
+}
+
+label{
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+input{
+  width: 100%;
+  border: 1px solid #ddd;
+  height: 35px;
+  padding: 0px 10px;
+  font-size: 16px;
+}
+.adminpage button {
+  height: 35px;
+  border: 1px solid #ddd;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  background: lightgreen;
+}
+
+.error, .status {
+  font-size: 14px;
+  color: red;
+  margin: 5px 0px;
+}
+
+.status{
+ color: lightyellow;
+}

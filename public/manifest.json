@@ -1,0 +1,26 @@
+{
+  "short_name": "ChennaiJs",
+  "name": "ChennaiJs",
+  "icons": [
+    {
+      "src": "img/js46.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "img/js92.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "img/js192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+],
+"gcm_sender_id": "272157852543",
+"start_url": "./index.html",
+"display": "standalone",
+"theme_color": "#000000",
+"background_color": "#ffffff"
+}
